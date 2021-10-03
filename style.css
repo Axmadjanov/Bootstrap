@@ -1,0 +1,516 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100%;
+  overflow: hidden;
+}
+#message {
+  width: 60%;
+}
+.birinchi {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.card {
+  width: 20%;
+  height: 55vh;
+  box-shadow: 0 2px 5px 2px #111;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  flex: 0.5;
+  border-radius: 50px;
+  margin: 10px;
+  position: relative;
+  transition: all 300ms ease-in;
+  cursor: pointer;
+}
+.card.active {
+  flex: 5;
+}
+
+.funct {
+  color: #111;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(125, 111, 118);
+  overflow: hidden;
+  /* background-image: url(./ultraback.jpg);
+  background-size: cover; */
+}
+.navbar2 {
+  width: 60%;
+}
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.left {
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  background-color: #fff;
+}
+
+.back {
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 10px;
+}
+.back:hover {
+  background-color: #111;
+}
+.i {
+  padding-left: 10px;
+}
+i {
+  font-size: 30px;
+  color: rgb(208, 200, 200);
+}
+.p {
+  font-size: 13px;
+  color: rgb(208, 200, 200);
+}
+.menubar {
+  width: 13%;
+  height: 100vh;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  background-color: rgb(79, 74, 74);
+}
+.icon {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont {
+  width: 87%;
+}
+input {
+  width: 70%;
+  height: 1.5rem;
+  border-radius: 2px;
+  background-color: rgb(186, 183, 183);
+  padding: 2px 10px;
+  outline: none;
+  border: 0;
+}
+
+.input {
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.user {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.people {
+  width: 100%;
+  height: 3.5rem;
+  padding-top: 8px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.people:hover {
+  background-color: cadetblue;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.offcanvas-header {
+  width: 100%;
+  height: 7rem;
+  background-color: rgb(78, 78, 230);
+}
+.offcanvas {
+  width: 20%;
+}
+.div7 {
+  display: flex;
+  flex-direction: column;
+}
+.funct {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  /* flex-direction: row; */
+
+  cursor: pointer;
+}
+.funct:hover {
+  background-color: rgb(177, 174, 174);
+}
+.funct i {
+  font-size: 15px;
+}
+
+.ikkinchi {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.malumot {
+  width: 30%;
+  height: 50vh;
+}
+.ikkinchikichik {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#phonenumber {
+  width: 40%;
+}
+#btn2 {
+  padding: 5px;
+  background-color: rgb(61, 61, 255);
+  border-radius: 3px;
+  border: 0;
+  outline: none;
+}
+#btn2:active {
+  transform: scale(0.9);
+}
+/* .type {
+  width: 60%;
+} */
+#button {
+  position: absolute;
+  bottom: 10px;
+  left: 39px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(93, 93, 244);
+  flex: auto;
+  z-index: 999;
+}
+#button:active {
+  transform: scale(0.9);
+}
+#p {
+  width: auto;
+  padding: 2px 10px;
+  position: absolute;
+  background-color: rgb(198, 198, 255);
+  border-bottom-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  right: 0px;
+  bottom: 2.2rem;
+}
+.divcha {
+  height: 3rem;
+  border-radius: 0;
+  width: 60%;
+  background-color: rgb(198, 198, 255);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.glavni {
+  margin: 5px;
+}
+.asosiy {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  box-sizing: content-box;
+  position: absolute;
+  overflow: hidden;
+  background: url(./ultraback.jpg);
+  right: 0px;
+}
+.tepasi {
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  background-color: rgb(198, 198, 255);
+}
+.tepasi img {
+  position: absolute;
+  left: 50px;
+  width: 40px;
+  height: 40px;
+}
+.tepasi span {
+  position: absolute;
+  left: 90px;
+}
+.backpart2 {
+  font-size: 20px;
+  color: gray;
+  cursor: pointer;
+}
+.dotlar {
+  position: absolute;
+  color: gray;
+  right: 10px;
+}
+
+#typewriter {
+  height: 2rem;
+  border-radius: 0;
+  width: 75%;
+  position: absolute;
+  bottom: 0px;
+  /* right: 0px; */
+  background-color: rgb(198, 198, 255);
+}
+.mikrofon {
+  position: absolute;
+  font-size: 20px;
+  right: 10px;
+  color: rgb(57, 54, 54);
+  cursor: pointer;
+}
+.plane2 {
+  position: relative;
+  left: 47%;
+  font-size: 20px;
+  color: rgb(49, 97, 244);
+  cursor: pointer;
+}
+.paga {
+  position: absolute;
+  font-size: 20px;
+  right: 40px;
+  color: rgb(57, 54, 54);
+  cursor: pointer;
+}
+.emoji {
+  position: absolute;
+  left: 20px;
+  font-size: 20px;
+  color: rgb(57, 54, 54);
+  cursor: pointer;
+}
+.sent {
+  font-size: 10px;
+  color: rgb(84, 84, 250);
+}
+.joke {
+  font-size: 20px;
+  color: yellow;
+  cursor: pointer;
+}
+.emojilar {
+  width: 20%;
+  height: 25vh;
+  padding: 10px;
+  /* text-align: center; */
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  background-color: rgb(101, 88, 88);
+}
+.part {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  background-color: rgb(198, 198, 255);
+}
+
+.chating {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 40px;
+  overflow: hidden;
+  box-sizing: content-box;
+}
+.xabar {
+  box-sizing: content-box;
+  background-color: #fff;
+  margin: 3px;
+  padding: 3px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.time {
+  display: flex;
+  justify-content: end;
+  font-size: 10px;
+}
+.some {
+  /* display: block; */
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 800px) {
+  .ikkinchikichik {
+    width: 100%;
+    height: 100vh;
+  }
+  .malumot {
+    width: 40%;
+    height: 40vh;
+    text-align: center;
+    font-size: 10px;
+  }
+  .left {
+    width: 100%;
+    position: absolute;
+    right: 0px;
+    height: 100vh;
+  }
+  .some {
+    width: 100%;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; */
+    height: 2rem;
+    visibility: visible;
+  }
+  #ista {
+    width: 80%;
+    font-size: 15px;
+    background: #fff;
+  }
+  .backpart {
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .some2 {
+    width: 100%;
+    height: 2rem;
+  }
+  .searchlar {
+    position: absolute;
+    top: 10px;
+    right: 45px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .bar {
+    margin: 10px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .asosiy {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* box-sizing: content-box; */
+  }
+  .chating {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 40px;
+    overflow: hidden;
+    box-sizing: content-box;
+  }
+  .symbol {
+    color: rgb(177, 174, 174);
+  }
+  .menubar {
+    display: none;
+  }
+  .input {
+    display: none;
+  }
+  .people {
+    width: 100%;
+    font-size: 20px;
+    height: 3rem;
+  }
+  .people img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .part {
+    height: 3rem;
+  }
+  #typewriter {
+    width: 75%;
+    height: 3rem;
+    font-size: 20px;
+  }
+  .plane2 {
+    font-size: 20px;
+  }
+  .emoji {
+    font-size: 20px;
+  }
+  .dotlar {
+    font-size: 15px;
+  }
+  .tepasi img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .tepasi span {
+    font-size: 15px;
+  }
+  .backpart2 {
+    font-size: 15px;
+  }
+  .mikrofon {
+    font-size: 20px;
+  }
+  .paga {
+    font-size: 20px;
+  }
+  .xabar {
+    font-size: 20px;
+  }
+  /* .ikkinchi {
+    width: 100%;
+    height: 2.5rem;
+    font-size: 10px;
+  } */
+}
