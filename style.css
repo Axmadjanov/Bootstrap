@@ -436,7 +436,7 @@ img {
   }
   .asosiy {
     width: 100%;
-    height: 100;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -498,6 +498,8 @@ img {
   }
   .backpart2 {
     font-size: 15px;
+    position:absolute;
+    left:10px;
   }
   .mikrofon {
     font-size: 20px;
